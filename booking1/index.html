@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Geologica&display=swap" rel="stylesheet" />
+  <link href="../shared/styles.css" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Book a Session - Horizon Studio</title>
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__brand" aria-label="Horizon Studio Home">
+      <img src="../header/images/logo.png" alt="Horizon Studio" class="header__logo" />
+    </a>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="/" class="header__link">Home</a></li>
+        <li><a href="/services/" class="header__link">Services</a></li>
+        <li><a href="/photographers/" class="header__link">Photographers</a></li>
+        <li><a href="/location/" class="header__link">Location</a></li>
+        <li><a href="/contact/" class="header__link header__link--cta">Contact</a></li>
+        <li><a href="/booking1/" class="header__link header__link--primary header__link--active">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page__content booking-content">
+      <h1 class="page__title">Book a Session</h1>
+
+      <form class="booking-form">
+        <fieldset class="form-group">
+          <legend class="form-group__title">Service</legend>
+          <div class="form-group__options">
+            <label class="form-option">
+              <input type="radio" name="service" value="landscape" />
+              <span>Landscape Photo Session</span>
+            </label>
+            <label class="form-option">
+              <input type="radio" name="service" value="drone" />
+              <span>Drone Landscape Photography</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="form-group__title">Date and Time</legend>
+          <input type="datetime-local" name="datetime" class="form-input" required />
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="form-group__title">Photographer</legend>
+          <div class="form-group__options">
+            <label class="form-option">
+              <input type="radio" name="photographer" value="alex" />
+              <span>Alex Morgan - Lead Landscape Photographer</span>
+            </label>
+            <label class="form-option">
+              <input type="radio" name="photographer" value="jamie" />
+              <span>Jamie Chen - Drone Photography Specialist</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="form-submit">Submit Booking</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

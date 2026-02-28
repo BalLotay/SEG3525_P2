@@ -1,0 +1,59 @@
+/* Services page specific styles */
+
+body {
+  background-image: url('../images/bg.png');
+}
+
+.page__content {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.page__title {
+  font-size: 48px;
+  color: #ff8d28;
+  margin: 0 0 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.card-grid {
+  width: 100%;
+  max-width: 1200px;
+  gap: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  height: 180px;
+  margin-bottom: 12px;
+}
+
+.card__title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.card__description {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .page__title {
+    font-size: 42px;
+  }
+
+  .card-grid {
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}

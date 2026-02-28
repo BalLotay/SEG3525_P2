@@ -1,0 +1,86 @@
+/* Contact page specific styles */
+
+body {
+  background-image: url('../images/bg.png');
+}
+
+.page__content {
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.page__title {
+  font-size: 48px;
+  color: #ff8d28;
+  margin: 0 0 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-items {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.contact-item {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact-item__icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact-item__label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e8e8e8;
+  margin-bottom: 8px;
+}
+
+.contact-item__link {
+  font-size: 16px;
+  color: #ff8d28;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item__link:hover {
+  color: #e67e20;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .page__title {
+    font-size: 32px;
+  }
+
+  .contact-items {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .contact-item {
+    min-width: 100%;
+  }
+
+  .contact-item__label {
+    font-size: 16px;
+  }
+
+  .contact-item__link {
+    font-size: 14px;
+  }
+}

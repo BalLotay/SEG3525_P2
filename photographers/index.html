@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Geologica&display=swap" rel="stylesheet" />
+  <link href="../shared/styles.css" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Photographers - Horizon Studio</title>
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__brand" aria-label="Horizon Studio Home">
+      <img src="../header/images/logo.png" alt="Horizon Studio" class="header__logo" />
+    </a>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="/" class="header__link">Home</a></li>
+        <li><a href="/services/" class="header__link">Services</a></li>
+        <li><a href="/photographers/" class="header__link header__link--active">Photographers</a></li>
+        <li><a href="/location/" class="header__link">Location</a></li>
+        <li><a href="/contact/" class="header__link header__link--cta">Contact</a></li>
+        <li><a href="/booking1/" class="header__link header__link--primary">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page__content">
+      <h1 class="page__title">Our Photographers</h1>
+
+      <div class="card-grid photographers-grid">
+        <div class="card photographer-card">
+          <div class="card__image" style="background-image: url('./images/guy1.png');"></div>
+          <h3 class="card__title">Alex Morgan</h3>
+          <p class="card__subtitle">Lead Landscape Photographer</p>
+          <p class="card__description">
+            I focus on capturing natural light and wide landscapes, with an emphasis on balance, scale, and atmosphere.
+          </p>
+        </div>
+
+        <div class="card photographer-card">
+          <div class="card__image" style="background-image: url('./images/guy2.png');"></div>
+          <h3 class="card__title">Jamie Chen</h3>
+          <p class="card__subtitle">Drone Photography Specialist</p>
+          <p class="card__description">
+            I create aerial landscape images that highlight patterns, movement, and perspective from above.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

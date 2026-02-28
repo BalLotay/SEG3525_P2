@@ -1,0 +1,137 @@
+/* Photographers page specific styles */
+
+body {
+  background-image: url('../images/bg.png');
+}
+
+.page__content {
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.page__title {
+  font-size: 48px;
+  color: #ff8d28;
+  margin: 0 0 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.photographers-grid {
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.photographer-card {
+  max-width: 100%;
+}
+
+.photographer-card .card__image {
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  color: #ff8d28;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.photographer-card .card__description {
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .page__title {
+    font-size: 42px;
+  }
+
+  .photographers-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .photographer-card .card__image {
+    height: 250px;
+  }
+}
+.v19_88 {
+  width: 96px;
+  color: rgba(46,46,46,1);
+  position: absolute;
+  top: 23px;
+  left: 1116px;
+  font-family: Geologica;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v19_89 {
+  width: 68px;
+  height: 68px;
+  background: url("../images/v19_89.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.800000011920929;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.v19_90 {
+  width: 77px;
+  color: rgba(47,37,29,1);
+  position: absolute;
+  top: 23px;
+  left: 970px;
+  font-family: Geologica;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v19_91 {
+  width: 83px;
+  color: rgba(47,37,29,1);
+  position: absolute;
+  top: 23px;
+  left: 861px;
+  font-family: Geologica;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v19_92 {
+  width: 144px;
+  color: rgba(46,46,46,1);
+  position: absolute;
+  top: 23px;
+  left: 691px;
+  font-family: Geologica;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v19_93 {
+  width: 80px;
+  color: rgba(46,46,46,1);
+  position: absolute;
+  top: 23px;
+  left: 578px;
+  font-family: Geologica;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}

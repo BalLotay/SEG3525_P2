@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Geologica&display=swap" rel="stylesheet" />
+  <link href="../shared/styles.css" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Booking Details - Horizon Studio</title>
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__brand" aria-label="Horizon Studio Home">
+      <img src="../header/images/logo.png" alt="Horizon Studio" class="header__logo" />
+    </a>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="/" class="header__link">Home</a></li>
+        <li><a href="/services/" class="header__link">Services</a></li>
+        <li><a href="/photographers/" class="header__link">Photographers</a></li>
+        <li><a href="/location/" class="header__link">Location</a></li>
+        <li><a href="/contact/" class="header__link header__link--cta">Contact</a></li>
+        <li><a href="/booking1/" class="header__link header__link--primary header__link--active">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page__content booking-content">
+      <h1 class="page__title">Your Information</h1>
+
+      <form class="booking-form">
+        <fieldset class="form-group">
+          <legend class="form-group__title">Full Name</legend>
+          <input type="text" name="fullname" class="form-input" placeholder="John Doe" required />
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="form-group__title">Email</legend>
+          <input type="email" name="email" class="form-input" placeholder="johndoe@gmail.com" required />
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="form-group__title">Notes to Photographer</legend>
+          <textarea name="notes" class="form-input form-textarea" placeholder="I'd like to take a photo at Kiweki Point facing the Parliament during the Golden Hour to include in my portfolio"></textarea>
+        </fieldset>
+
+        <div class="form-navigation">
+          <a href="/booking1/" class="form-link">← Back</a>
+          <a href="/booking3/" class="form-link form-link--primary">Next →</a>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

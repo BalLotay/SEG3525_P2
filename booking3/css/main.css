@@ -1,0 +1,98 @@
+/* Booking confirmation page styles */
+
+body {
+  background-image: url('../images/bg.png');
+}
+
+.page__content {
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.page__title {
+  font-size: 48px;
+  color: #ff8d28;
+  margin: 0 0 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.booking-content {
+  max-width: 100%;
+  width: 100%;
+}
+
+.confirmation-card {
+  background: rgba(159, 159, 159, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.confirmation-text {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e8e8e8;
+}
+
+.confirmation-text:last-child {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #ff8d28;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form-link {
+  flex: 1;
+  padding: 12px 20px;
+  text-align: center;
+  background: #f0f0f0;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-link:hover {
+  background: #e0e0e0;
+}
+
+.form-link--primary {
+  background: #ff8d28;
+  color: #e8e8e8;
+}
+
+.form-link--primary:hover {
+  background: #e67e20;
+}
+
+@media (max-width: 768px) {
+  .page__title {
+    font-size: 32px;
+  }
+
+  .confirmation-card {
+    padding: 15px;
+  }
+
+  .confirmation-text {
+    font-size: 13px;
+  }
+
+  .form-navigation {
+    flex-direction: column;
+  }
+
+  .form-link {
+    width: 100%;
+  }
+}

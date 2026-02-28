@@ -1,0 +1,137 @@
+/* Booking page specific styles */
+
+body {
+  background-image: url('../images/bg.png');
+}
+
+.page__content {
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.page__title {
+  font-size: 48px;
+  color: #ff8d28;
+  margin: 0 0 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.booking-content {
+  max-width: 100%;
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(159, 159, 159, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.form-group__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e8e8e8;
+  margin: 0 0 8px 0;
+  display: block;
+}
+
+.form-group__options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #e8e8e8;
+}
+
+.form-option input[type="radio"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  accent-color: #ff8d28;
+}
+
+.form-option span {
+  flex: 1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 141, 40, 0.3);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #e8e8e8;
+  font-family: Geologica, system-ui, sans-serif;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff8d28;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.form-submit {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: #ff8d28;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  font-family: Geologica, system-ui, sans-serif;
+}
+
+.form-submit:hover {
+  background: #ff7d18;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 141, 40, 0.3);
+}
+
+.form-submit:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .page__title {
+    font-size: 42px;
+  }
+
+  .booking-content {
+    padding: 20px;
+  }
+
+  .form-group {
+    padding: 20px;
+  }
+
+  .form-group__title {
+    font-size: 18px;
+  }
+
+  .form-option {
+    font-size: 14px;
+  }
+}
