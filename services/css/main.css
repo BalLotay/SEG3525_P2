@@ -16,7 +16,7 @@ body {
   overflow: visible;
 }
 
-.page__content {
+.page-content {
   overflow: visible;
 }
 
@@ -27,17 +27,17 @@ body {
   border: 1px solid rgba(255, 141, 40, 0.28);
 }
 
-.page__content > .info-section {
+.page-content > .info-section {
   background: rgba(0, 0, 0, 0.52);
   border: 1px solid rgba(255, 141, 40, 0.22);
 }
 
-.service-card .studio-card__image {
+.service-card .studio-card-image {
   height: 180px;
   margin-bottom: 12px;
 }
 
-.service-card .studio-card__title {
+.service-card .studio-card-title {
   font-size: 28px;
 }
 

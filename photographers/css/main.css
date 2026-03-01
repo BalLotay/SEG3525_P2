@@ -16,11 +16,11 @@ body {
   overflow: visible;
 }
 
-.page__content {
+.page-content {
   overflow: visible;
 }
 
-.photographer-card .studio-card__image {
+.photographer-card .studio-card-image {
   height: 200px;
   margin-bottom: 10px;
 }
@@ -31,14 +31,14 @@ body {
   border: 1px solid rgba(255, 141, 40, 0.22);
 }
 
-.card__subtitle {
+.card-subtitle {
   margin: 0 0 15px;
   font-size: 16px;
   font-weight: 600;
   color: #ff8d28;
 }
 
-.photographer-card .studio-card__description {
+.photographer-card .studio-card-description {
   line-height: 1.8;
 }
 
@@ -79,7 +79,7 @@ body {
   height: 100%;
 }
 
-.portfolio-card__image {
+.portfolio-card-image {
   height: 180px;
 }
 
@@ -88,11 +88,11 @@ body {
     row-gap: 20px;
   }
 
-  .photographer-card .studio-card__image {
+  .photographer-card .studio-card-image {
     height: 250px;
   }
 
-  .portfolio-card__image {
+  .portfolio-card-image {
     height: 170px;
   }
 }

@@ -57,7 +57,7 @@ body {
   border-bottom: 1px solid rgba(255, 141, 40, 0.1);
 }
 
-.header__brand {
+.header-brand {
   width: 140px;
   height: 40px;
   display: inline-flex;
@@ -68,21 +68,19 @@ body {
   overflow: hidden;
 }
 
-.header__logo {
-  width: 100%;
+.header-logo {
   height: 100%;
   display: block;
-  object-fit: contain;
   border-radius: 16px;
 }
 
-.header__nav {
+.header-nav {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
 }
 
-.header__menu {
+.header-menu {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -91,7 +89,7 @@ body {
   gap: 30px;
 }
 
-.header__link {
+.header-link {
   color: var(--studio-color-text);
   text-decoration: none;
   font-weight: 500;
@@ -100,16 +98,16 @@ body {
   transition: color 0.3s ease;
 }
 
-.header__link:hover,
-.header__link--active {
+.header-link:hover,
+.header-link--active {
   color: var(--studio-color-primary);
 }
 
-.header__link--active {
+.header-link--active {
   font-weight: 600;
 }
 
-.header__link--primary {
+.header-link--primary {
   padding: 10px 30px;
   color: var(--studio-color-primary);
   background: rgba(255, 141, 40, 0.08);
@@ -120,7 +118,7 @@ body {
     inset 0 0 1px rgba(255, 141, 40, 0.85);
 }
 
-.header__link--primary:hover {
+.header-link--primary:hover {
   color: var(--studio-color-primary);
   background: rgba(255, 141, 40, 0.12);
   border-color: rgba(255, 141, 40, 0.55);
@@ -139,7 +137,7 @@ body {
   overflow: hidden;
 }
 
-.page__content {
+.page-content {
   width: 100%;
   flex: 1;
   min-height: 0;
@@ -152,7 +150,7 @@ body {
   overflow: auto;
 }
 
-.page__title {
+.page-title {
   width: 100%;
   margin: 0 0 15px;
   text-align: center;
@@ -172,14 +170,14 @@ body {
   position: relative;
 }
 
-.hero__content {
+.hero-content {
   position: relative;
   z-index: 1;
   text-align: center;
   max-width: 900px;
 }
 
-.hero__title {
+.hero-title {
   margin: 0 0 20px;
   font-size: 96px;
   font-weight: 700;
@@ -187,7 +185,7 @@ body {
   color: var(--studio-color-primary);
 }
 
-.hero__subtitle {
+.hero-subtitle {
   margin: 0;
   font-size: 36px;
   font-weight: 400;
@@ -202,7 +200,7 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.studio-card__image {
+.studio-card-image {
   width: 100%;
   height: 270px;
   margin-bottom: 20px;
@@ -211,14 +209,14 @@ body {
   background-position: center;
 }
 
-.studio-card__title {
+.studio-card-title {
   margin: 0 0 15px;
   font-size: 32px;
   font-weight: 700;
   color: var(--studio-color-text);
 }
 
-.studio-card__description {
+.studio-card-description {
   margin: 0;
   font-size: 16px;
   line-height: 1.6;
@@ -236,14 +234,14 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.info-section__title {
+.info-section-title {
   margin: 0 0 15px;
   font-size: 20px;
   font-weight: 600;
   color: var(--studio-color-text);
 }
 
-.info-section__content {
+.info-section-content {
   margin: 0;
   font-size: 14px;
   line-height: 1.8;
@@ -261,19 +259,19 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .header__menu {
+  .header-menu {
     gap: 20px;
   }
 
-  .header__link {
+  .header-link {
     font-size: 14px;
   }
 
-  .hero__title {
+  .hero-title {
     font-size: 64px;
   }
 
-  .hero__subtitle {
+  .hero-subtitle {
     font-size: 24px;
   }
 }
@@ -288,25 +286,25 @@ body {
     padding: 0 10px;
   }
 
-  .header__brand {
+  .header-brand {
     width: 100px;
     height: 28px;
   }
 
-  .header__menu {
+  .header-menu {
     gap: 10px;
   }
 
-  .header__link {
+  .header-link {
     font-size: 12px;
     padding: 4px 6px;
   }
 
-  .header__link--primary {
+  .header-link--primary {
     padding: 8px 12px;
   }
 
-  .page__content {
+  .page-content {
     padding: 20px 15px;
   }
 
@@ -314,15 +312,15 @@ body {
     padding-top: 60px;
   }
 
-  .page__title {
+  .page-title {
     font-size: 42px;
   }
 
-  .hero__title {
+  .hero-title {
     font-size: 48px;
   }
 
-  .hero__subtitle {
+  .hero-subtitle {
     font-size: 18px;
   }
 
@@ -330,16 +328,16 @@ body {
     padding: 20px;
   }
 
-  .studio-card__image {
+  .studio-card-image {
     height: 200px;
     margin-bottom: 15px;
   }
 
-  .studio-card__title {
+  .studio-card-title {
     font-size: 24px;
   }
 
-  .studio-card__description {
+  .studio-card-description {
     font-size: 14px;
   }
 
@@ -349,11 +347,11 @@ body {
     max-width: 100%;
   }
 
-  .info-section__title {
+  .info-section-title {
     font-size: 18px;
   }
 
-  .info-section__content {
+  .info-section-content {
     font-size: 13px;
   }
 }

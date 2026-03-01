@@ -19,7 +19,7 @@
   background: rgba(159, 159, 159, 0.1);
 }
 
-.form-group__title {
+.form-group-title {
   display: block;
   margin: 0 0 14px;
   padding: 0 0 8px;
@@ -30,7 +30,7 @@
   border-bottom: 1px solid rgba(255, 141, 40, 0.35);
 }
 
-.form-group__options {
+.form-group-options {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -133,7 +133,7 @@
     padding: 15px;
   }
 
-  .form-group__title {
+  .form-group-title {
     font-size: 16px;
   }
 

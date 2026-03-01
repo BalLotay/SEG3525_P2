@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
 }
 
-.hero__content {
+.hero-content {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -17,7 +17,7 @@ body {
   margin-bottom: 60px;
 }
 
-.info-section__content {
+.info-section-content {
   line-height: 2;
 }
 
