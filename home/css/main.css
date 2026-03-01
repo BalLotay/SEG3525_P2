@@ -4,7 +4,7 @@ body {
 
 .hero {
   height: 50vh;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .hero-content {

@@ -30,12 +30,12 @@ body {
   font-family: var(--studio-font);
   font-size: 14px;
   color: var(--studio-color-text);
-  background-color: transparent;
+  background-color: var(--studio-color-bg);
   background-image: var(--page-background);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .header {
