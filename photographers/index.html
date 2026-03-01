@@ -3,52 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Geologica&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link href="../shared/styles.css" rel="stylesheet" />
   <link href="./css/main.css" rel="stylesheet" />
   <title>Photographers - Horizon Studio</title>
 </head>
-<body>
+<body style="--page-background: url('./images/bg.jpg');">
   <header class="header">
-    <a href="/" class="header__brand" aria-label="Horizon Studio Home">
-      <img src="../header/images/logo.png" alt="Horizon Studio" class="header__logo" />
+    <a href="/home/" class="header__brand" aria-label="Horizon Studio Home">
+      <img src="../header/images/logo.jpg" alt="Horizon Studio" class="header__logo" />
     </a>
     <nav class="header__nav">
       <ul class="header__menu">
-        <li><a href="/" class="header__link">Home</a></li>
+        <li><a href="/home/" class="header__link">Home</a></li>
         <li><a href="/services/" class="header__link">Services</a></li>
         <li><a href="/photographers/" class="header__link header__link--active">Photographers</a></li>
         <li><a href="/location/" class="header__link">Location</a></li>
-        <li><a href="/contact/" class="header__link header__link--cta">Contact</a></li>
+        <li><a href="/contact/" class="header__link">Contact</a></li>
         <li><a href="/booking1/" class="header__link header__link--primary">Book Now</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="page">
-    <section class="page__content">
+    <section class="page__content container-xl">
       <h1 class="page__title">Our Photographers</h1>
 
-      <div class="card-grid photographers-grid">
-        <div class="card photographer-card">
-          <div class="card__image" style="background-image: url('./images/guy1.png');"></div>
-          <h3 class="card__title">Alex Morgan</h3>
-          <p class="card__subtitle">Lead Landscape Photographer</p>
-          <p class="card__description">
-            I focus on capturing natural light and wide landscapes, with an emphasis on balance, scale, and atmosphere.
-          </p>
+      <div class="row g-3 g-md-4 photographers-grid">
+        <article class="col-12 col-lg-6 d-flex">
+          <div class="studio-card photographer-card w-100">
+            <div class="studio-card__image" style="background-image: url('./images/guy1.jpg');"></div>
+            <h2 class="studio-card__title">Alex Morgan</h2>
+            <p class="card__subtitle">Lead Landscape Photographer</p>
+            <p class="studio-card__description">
+              I focus on capturing natural light and wide landscapes, with an emphasis on balance, scale, and atmosphere.
+            </p>
+          </div>
+        </article>
+
+        <article class="col-12 col-lg-6 d-flex">
+          <div class="studio-card photographer-card w-100">
+            <div class="studio-card__image" style="background-image: url('./images/guy2.jpg');"></div>
+            <h2 class="studio-card__title">Jamie Chen</h2>
+            <p class="card__subtitle">Drone Photography Specialist</p>
+            <p class="studio-card__description">
+              I create aerial landscape images that highlight patterns, movement, and perspective from above.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="info-section portfolio-section">
+        <h2 class="info-section__title">Explore Portfolio by Session Type</h2>
+        <p class="info-section__content">
+          Compare family, portrait, and outdoor styles before booking your session.
+        </p>
+        <div class="portfolio-filters" role="tablist" aria-label="Portfolio session type filters">
+          <button type="button" class="portfolio-filter-btn is-active" data-filter="all">All</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="family">Family</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="portrait">Portrait</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="outdoor">Outdoor</button>
         </div>
 
-        <div class="card photographer-card">
-          <div class="card__image" style="background-image: url('./images/guy2.png');"></div>
-          <h3 class="card__title">Jamie Chen</h3>
-          <p class="card__subtitle">Drone Photography Specialist</p>
-          <p class="card__description">
-            I create aerial landscape images that highlight patterns, movement, and perspective from above.
-          </p>
+        <div class="row g-3 portfolio-grid">
+          <article class="col-12 col-md-6 col-xl-4 portfolio-item" data-session="family">
+            <div class="studio-card portfolio-card">
+              <div class="studio-card__image portfolio-card__image" style="background-image: url('./images/family-story.jpg');"></div>
+              <h3 class="studio-card__title">Family Story Session</h3>
+              <p class="studio-card__description">Warm candid moments with parents and children in natural light.</p>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-xl-4 portfolio-item" data-session="portrait">
+            <div class="studio-card portfolio-card">
+              <div class="studio-card__image portfolio-card__image" style="background-image: url('./images/classic-portrait.jpg');"></div>
+              <h3 class="studio-card__title">Classic Portraits</h3>
+              <p class="studio-card__description">Clean and timeless framing with guided posing and expression coaching.</p>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-xl-4 portfolio-item" data-session="outdoor">
+            <div class="studio-card portfolio-card">
+              <div class="studio-card__image portfolio-card__image" style="background-image: url('./images/outdoor-event.jpg');"></div>
+              <h3 class="studio-card__title">Outdoor Event Coverage</h3>
+              <p class="studio-card__description">Wider environmental compositions ideal for family milestones.</p>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-xl-4 portfolio-item" data-session="family">
+            <div class="studio-card portfolio-card">
+              <div class="studio-card__image portfolio-card__image" style="background-image: url('./images/family-celebrating.jpg');"></div>
+              <h3 class="studio-card__title">Family Celebration</h3>
+              <p class="studio-card__description">Natural interactions and group compositions for gatherings.</p>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-xl-4 portfolio-item" data-session="portrait">
+            <div class="studio-card portfolio-card">
+              <div class="studio-card__image portfolio-card__image" style="background-image: url('./images/creative-portrait.jpg');"></div>
+              <h3 class="studio-card__title">Creative Portrait Angles</h3>
+              <p class="studio-card__description">Distinct perspective-driven portraits for personal storytelling.</p>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-xl-4 portfolio-item" data-session="outdoor">
+            <div class="studio-card portfolio-card">
+              <div class="studio-card__image portfolio-card__image" style="background-image: url('./images/sunset.jpg');"></div>
+              <h3 class="studio-card__title">Sunset Outdoor Session</h3>
+              <p class="studio-card__description">Golden-hour color and scenic backdrops for memorable family photos.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    const filterButtons = document.querySelectorAll(".portfolio-filter-btn");
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selected = button.dataset.filter;
+
+        filterButtons.forEach((btn) => btn.classList.remove("is-active"));
+        button.classList.add("is-active");
+
+        portfolioItems.forEach((item) => {
+          const itemType = item.dataset.session;
+          const shouldShow = selected === "all" || selected === itemType;
+          item.classList.toggle("d-none", !shouldShow);
+        });
+      });
+    });
+  </script>
 </body>
 </html>

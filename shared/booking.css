@@ -1,0 +1,152 @@
+.booking-content {
+  width: 100%;
+  max-width: 100%;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  margin: 0;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(159, 159, 159, 0.1);
+}
+
+.form-group__title {
+  display: block;
+  margin: 0 0 14px;
+  padding: 0 0 8px;
+  color: #ffbe84;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid rgba(255, 141, 40, 0.35);
+}
+
+.form-group__options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #e8e8e8;
+  font-size: 16px;
+}
+
+.form-option input[type="radio"] {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #ff8d28;
+}
+
+.form-option span {
+  flex: 1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 141, 40, 0.3);
+  border-radius: 8px;
+  font-family: Geologica, system-ui, sans-serif;
+  font-size: 16px;
+  color: #e8e8e8;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff8d28;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(255, 141, 40, 0.3);
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.form-link,
+.form-submit {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.form-link {
+  padding: 12px 20px;
+  background: #f0f0f0;
+  color: #000;
+}
+
+.form-link:hover {
+  background: #e0e0e0;
+}
+
+.form-link--primary,
+.form-submit {
+  border: none;
+  color: #e8e8e8;
+  background: #ff8d28;
+}
+
+.form-link--primary:hover,
+.form-submit:hover {
+  background: #e67e20;
+}
+
+.form-submit {
+  padding: 15px 40px;
+  cursor: pointer;
+  font-family: Geologica, system-ui, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .booking-form {
+    gap: 20px;
+  }
+
+  .form-group {
+    padding: 15px;
+  }
+
+  .form-group__title {
+    font-size: 16px;
+  }
+
+  .form-option {
+    font-size: 14px;
+  }
+
+  .form-navigation {
+    flex-direction: column;
+  }
+
+  .form-link,
+  .form-submit {
+    width: 100%;
+  }
+}

@@ -1,7 +1,5 @@
-/* Home page specific styles */
-
 body {
-  background-image: url('../images/bg.png');
+  background-image: url("../images/bg.jpg");
 }
 
 .hero {
@@ -9,15 +7,13 @@ body {
   background-attachment: fixed;
 }
 
-.hero__background {
-  opacity: 0.3;
-}
-
 .hero__content {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .info-section {
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 141, 40, 0.2);
   margin-bottom: 60px;
 }
 
@@ -26,10 +22,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .page {
-    height: calc(100vh - 60px);
-  }
-
   .hero {
     height: 50vh;
   }
