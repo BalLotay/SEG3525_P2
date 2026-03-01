@@ -1,6 +1,6 @@
 body {
   background-image: url("../images/bg.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -42,7 +42,7 @@ body {
   line-height: 1.8;
 }
 
-.portfolio-section {
+.info-section.portfolio-section {
   width: 100%;
   max-width: 1200px;
   text-align: left;
